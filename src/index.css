@@ -103,4 +103,30 @@ img {
   object-fit: cover;
 }
 
-/* ======= Media Query ======== */
+/* ======= Media Query (Medium Device) ======== */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  section {
+    margin-top: 6rem;
+  }
+}
+/* ======= Media Query (Small Device) ======== */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  section > h2 {
+    margin-top: 2rem;
+  }
+}
+/* ======= Media Query (Small Device) ======== */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}
