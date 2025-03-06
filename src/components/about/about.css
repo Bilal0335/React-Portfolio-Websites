@@ -39,22 +39,54 @@
   border-color: var(--color-bg-variant);
   cursor: default;
 }
-.about__icon{
-    font-size:1.4rem;
-    color: var(--color-primary);
-    margin-bottom: 1rem;
+.about__icon {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
 }
 
-.about__card h5{
-    font-size: 0.95rem;
+.about__card h5 {
+  font-size: 0.95rem;
 }
-.about__card small{
-    font-size: 0.7rem;
-    color: var(--color-light);
+.about__card small {
+  font-size: 0.7rem;
+  color: var(--color-light);
 }
 
-.about__content p{
-    /* font-size: 0.9rem; */
-    color: var(--color-light);
-    margin: 2rem 0 2.6rem;
+.about__content p {
+  /* font-size: 0.9rem; */
+  color: var(--color-light);
+  margin: 2rem 0 2.6rem;
+}
+
+/* ======= Media Query (Medium Device) ======== */
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .about__me {
+    margin: 2rem auto 4rem;
+    width: 50%;
+  }
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+/* ======= Media Query (Small Device) ======== */
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .about__content{
+    text-align: center;
+  }
+  .about__icon p{
+    margin: 1.5rem 0;
+  }
 }
