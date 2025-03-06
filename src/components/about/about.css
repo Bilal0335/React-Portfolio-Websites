@@ -83,10 +83,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-  .about__content{
+  .about__content {
     text-align: center;
   }
-  .about__icon p{
+  .about__icon p {
     margin: 1.5rem 0;
   }
 }
