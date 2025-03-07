@@ -1,5 +1,5 @@
 import React from "react";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
@@ -12,8 +12,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY"
+      .sendForm("service_q8kmobs", "template_93w5vxh", form.current, {
+        publicKey: "Kw5yQgqhyYcSwB4f6"
       })
       .then(
         () => {
@@ -73,7 +73,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea
