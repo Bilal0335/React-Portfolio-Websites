@@ -16,7 +16,9 @@
   overflow: hidden;
   transform: rotate(10deg);
   transition: var(--transition);
+  width: 100%;
 }
+
 .about__me-image:hover {
   transform: rotate(0deg);
 }
@@ -89,4 +91,5 @@
   .about__icon p {
     margin: 1.5rem 0;
   }
+
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/me-about.jpg";
+import ME from "../../assets/bilal.jpg";
+// import ME from "../../assets/me-about.jpg";
 import { FaAward, FaUsers } from "react-icons/fa";
 import { VscFolderLibrary } from "react-icons/vsc";
 const About = () => {
@@ -11,7 +12,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Me" />
+            <img src={ME} alt="About Me" width={500} height={370} />
           </div>
         </div>
         <div className="about__content">
@@ -33,10 +34,15 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            ea dolorum obcaecati, nemo iusto alias quasi odit pariatur delectus.
-            Natus, nemo dolore voluptatum suscipit corporis atque delectus
-            facilis sapiente libero?
+            I am a dedicated Software Engineering student looking for a
+            front-end development internship where I can contribute to a dynamic
+            team. With expertise in HTML, CSS, Bootstrap, JavaScript, and
+            Next.js, I strive to build responsive and user-friendly web
+            applications. I also have a strong understanding of SQL for database
+            management and am continuously improving my Python skills.
+            Passionate about learning and problem-solving, I am eager to apply
+            my knowledge to real-world projects, ensuring high-quality results
+            and a great user experience.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
